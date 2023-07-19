@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ma page</title>
+    <script src="js/myScript.js"></script>
+</head>
+
+<body onload="changeCouleur()">
+    <p id="para">Some text here</p>
+    <button onclick="changeColor('blue');">blue</button>
+    <button onclick="changeColor('red');">red</button>
+    <script>
+        function changeColor(newColor) {
+            var elem = document.getElementById('para');
+            elem.style.color = newColor;
+        }
+    </script>
+</body>
+
+</html>
